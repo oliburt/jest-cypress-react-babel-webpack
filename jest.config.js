@@ -7,5 +7,11 @@ module.exports = {
     '\\.css$': require.resolve('./test/style-mock.js'),
   },
   snapshotSerializers: ['jest-emotion'],
-  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  moduleDirectories: [
+    'node_modules',
+    path.join(__dirname, 'src'),
+    'shared',
+    path.join(__dirname, 'test'),
+  ],
 }
