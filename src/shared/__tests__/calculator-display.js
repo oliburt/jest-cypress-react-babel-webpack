@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from 'calculator-test-utils'
-import { light } from '../../themes'
 import CalculatorDisplay from '../calculator-display'
 
 test('renders', () => {
