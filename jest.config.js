@@ -14,4 +14,5 @@ module.exports = {
     'shared',
     path.join(__dirname, 'test'),
   ],
+  collectCoverageFrom: ['**/src/**/*.js'],
 }
